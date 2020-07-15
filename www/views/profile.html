@@ -1,0 +1,270 @@
+<div class="profile-tabs">
+  <ul>
+    <li id="points-nav" class="active"><a data-toggle="tab" href="#points">Points</a></li>
+    <li id="orders-nav"><a data-toggle="tab" href="#orders">Orders</a></li>
+    <li id="profile-nav"><a data-toggle="tab" href="#profile">Profile</a></li>
+    <li id="alerts-nav"><a data-toggle="tab" href="#alert">Alerts</a></li>
+    <li id="contact-nav"><a data-toggle="tab" href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<div class="tab-content">
+
+  <div id="points" class="tab-pane active">
+
+    <div class="points-indicator">
+      <input id="myValues" type="hidden">
+      <style type="text/css">
+
+      	.envelope{
+      		margin: 0 auto !important;
+      		background:#FFF;
+      		box-shadow:none;
+      	}
+
+        .speedPosition{
+      		background: #fff;
+      		color:#D1D2D6;
+      		box-shadow:none;
+      	}
+
+      	.valueg{
+      		font-size:50px;
+      		font-weight:400;
+      		color:#343434;
+      	}
+
+      	.nob{
+      		box-shadow:none !important;
+      		background:#579017;
+      	}
+
+      	.nob.danger{
+      		background:#16331B;
+      	}
+
+      	.numb{
+      		font-size:13px;
+      		font-weight:400;
+      		color:#D1D2D6;
+      		opacity:1;
+      	}
+
+      	.numb.danger{
+      		color:#D1D2D6;
+      	}
+
+      	.speedPosition{
+      		font-size:13px;
+      	}
+
+      	#speedometerWraper-myValues .speedNobe div{
+      		background:transparent;
+      		height:4px;
+      		left:2px;
+      	}
+
+      	#speedometerWraper-myValues .speedNobe div:after{
+      		content: '';
+          position: absolute;
+          height: 4px;
+          top: 0px;
+          width:45%;
+          background: #16331B;
+      	}
+
+      	#speedometerWraper-myValues .nob {
+      	  height: 2px;
+      	}
+
+      	#speedometerWraper-myValues .nob:after{
+      		content:'';
+      	  height: 2px;
+      		background:#E0E0E0;
+      		width:4px;
+      		position:absolute;
+      		right: -10px;
+      	}
+
+      	#speedometerWraper-myValues .nob:before{
+      		content:'';
+      		height: 2px;
+      		background:#579017;
+      		width:8px;
+      		position:absolute;
+      		left: -7px;
+      	}
+
+
+      	#speedometerWraper-myValues .midNob {
+      	    height: 2px;
+      			width:20px;
+      	}
+
+      	#speedometerWraper-myValues .nob.midNob:before{
+      		content:'';
+      		height: 2px;
+      		background:#579017;
+      		width:8px;
+      		position:absolute;
+      		left: -7px;
+      	}
+
+      	#speedometerWraper-myValues .nob.bright {
+      	    height: 4px !important;
+      			transition:all ease 0.3s;
+      	}
+
+      	#speedometerWraper-myValues .nob.bright:before,
+      	#speedometerWraper-myValues .midNob.bright:before{
+      		height: 4px !important;
+      	}
+
+      	#speedometerWraper-myValues .nob.danger:before,
+      	#speedometerWraper-myValues .nob.bright.danger:before{
+      		background:#16331B;
+      	}
+
+      	.label-tag{
+      		line-height:1;
+      		display:inline-block;
+          font-weight: 800;
+          font-size: 16px;
+      	}
+
+      	.envelope div:nth-child(3),
+      	.envelope div:nth-child(3):before{
+      		background:#8EDE14 !important;
+      	}
+
+      	.envelope div:nth-child(5),
+      	.envelope div:nth-child(5):before,
+      	.envelope div:nth-child(7),
+      	.envelope div:nth-child(7):before,
+      	.envelope div:nth-child(9),
+      	.envelope div:nth-child(9):before,
+      	.envelope div:nth-child(11),
+      	.envelope div:nth-child(11):before,
+      	.envelope div:nth-child(13),
+      	.envelope div:nth-child(13):before,
+      	.envelope div:nth-child(15),
+      	.envelope div:nth-child(15):before{
+      		background:#6CAD16 !important;
+      	}
+
+
+      	.envelope div:nth-child(17),
+      	.envelope div:nth-child(17):before,
+      	.envelope div:nth-child(19),
+      	.envelope div:nth-child(19):before,
+      	.envelope div:nth-child(21),
+      	.envelope div:nth-child(21):before{
+      		background:#65A316 !important;
+      	}
+
+        #speedometerWraper-myValues .numb {
+          width: 32px;
+        }
+
+      </style>
+    </div>
+
+  </div>
+
+  <div id="orders" class="tab-pane">
+
+    <div class="heading">
+      <h5>Please select your store to filter your orders</h5>
+    </div>
+
+    <div class="order-tools">
+      <div class="col-sm-6 col-xs-12">
+        <div class="offers-filter">
+          <select id="location-selector" class="filter-menu">
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <div class="start-order-bt">
+          <button id="start-order" class="hide">Start New Order</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="user-orders">
+      <div id="completed-orders" class="tab-pane">
+        <ul></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="profile" class="tab-pane">
+
+      <div class="patient-info">
+          <div class="pic"><img id="profile-big" src="assets/img/profile-2.png"></div>
+          <div class="user-name">
+            <h2><span class="full-name"></span></h2>
+            <h6>Patient since, <span class="patient-since-year"></span></h6>
+          </div>
+      </div>
+
+      <div class="patient-record-data">
+
+        <div class="card-id">
+          <span class="data-label">Card ID</span>
+          <span class="card-number"></span>
+        </div>
+
+        <div class="registered">
+          <span class="data-label">Registered</span>
+          <span class="registered-date"></span>
+        </div>
+
+        <div class="expires">
+          <span class="data-label">Expires</span>
+          <span class="expires-date"></span>
+        </div>
+
+      </div>
+
+      <div class="reward-card-code">
+          <span class="data-label">Your <span>Strain reward</span> card</span>
+          <div class="codebar"><svg id="barcode"></svg></div>
+      </div>
+
+      <div class="user-form">
+        <form id="user-preferences">
+          <div class="form-row pass-row"><label for="user-pass">Current Password</label><input type="password" id="user-current-pass"></div>
+          <div class="form-row pass-row"><label for="user-pass">New Password</label><input type="password" id="user-new-pass"></div>
+          <div class="save-form"><input class="submit-bt" type="button" value="save"></div>
+        </form>
+      </div>
+
+  </div>
+
+  <div id="alert" class="tab-pane">
+    <div class="alerts">
+      <h2>Latest alerts</h2>
+      <h5>Don’t miss our important notifications!</h5>
+      <ul class="alert-list"></ul>
+    </div>
+  </div>
+
+  <div id="contact" class="tab-pane">
+    <div class="contact">
+      <h2>CONTACT US</h2>
+      <h5>We’re here to help, just reach us!</h5>
+      <form id="profile-contact-form">
+        <div class="form-row"><label>Name</label><input type="text" id="fname" required></div>
+        <div class="form-row"><label>Email</label><input type="email" id="femail" required></div>
+        <div class="form-row"><label>Telephone</label><input type="text" id="ftelephone" required></div>
+        <div class="form-row"><label>Message</label><input type="text" id="message"/></div>
+        <div class="form-row text-center"><button type="button" id="submit-form">Submit</button></div>
+      </form>
+    </div>
+  </div>
+
+</div>

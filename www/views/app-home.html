@@ -1,0 +1,133 @@
+<div class="home-content">
+
+  <div class="points-redeem">
+    <div class="r-icon"><img src="assets/img/points-reward.png"></div>
+    <div class="r-text"></div>
+    <div class="r-button"><button data-toggle="collapse" data-target="#my-codebar">Check-in</button></div>
+  </div>
+
+  <div class="home-signup">
+    <div class="r-icon"><img src="assets/img/marijuana-packaging.png"></div>
+    <div class="r-text">Register and receive access to special offers and rewards</div>
+    <div class="r-button"><button id="join">Join Now</button></div>
+  </div>
+
+  <div id="my-codebar" class="collapse">
+    <div class="reward-card-code">
+        <span class="data-label">Your <span>Strain reward</span> card</span>
+        <div class="codebar"><svg id="mybarcode"></svg></div>
+    </div>
+  </div>
+
+  <div class="home-cta">
+    <div class="cta-item signup">
+      <div class="logo"><img id="medical-center-logo"></div>
+      <div class="content">
+      <div class="heading"><h5>Contact us to obtain or renew your medicinal cannabis ID today</h5></div>
+        <form id="home-contact">
+          <input type="text" placeholder="Name" id="request-name" required>
+          <input type="text" placeholder="Phone" id="request-phone" required>
+          <button id="submit-form" type="button" value="Submit">Submit</button>
+        </form>
+      </div>
+      <div class="clearfix"></div>
+      <div id="form-message" style="text-align: center;  margin-top: 15px;  clear: both;  font-size: 12px;" class="collapse"></div>
+      <div id="form-alert" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+
+            <div class="modal-body">
+              <div class="alert-form">
+                <img id="medical-center-logo-modal">
+                <h3>Your request has been submitted.</h3>
+                <p>A representative of <span id="medical-center-name"></span>
+                will communicate in the next 24 hours.</p>
+                <button type="button" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-item store-pickup">
+      <div class="icon"><img src="assets/img/marijuana-drive-through.png"><h5>Your<br> Orders</div>
+    </div>
+
+    <div class="lastest-adverts">
+      <div class="wrap">
+        <ul class="owl-carousel list owl-theme" id="slider-advert">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="near-dispensary">
+      <div class="icon"><img src="assets/img/checkmap-con.png"></div>
+      <div class="zone-label">
+        <h6>Nearest Dispensary</h6>
+        <h5></h5>
+      </div>
+      <div class="get-button">
+        <a target="_blank" href="" id="go-there">Get there</a>
+      </div>
+  </div>
+
+  <div class="lastest-offers">
+    <h3>Latest Offers</h3>
+    <div class="wrap">
+
+      <ul class="owl-carousel list owl-theme" id="slider">
+      </ul>
+
+      <!--<div class="view-more">
+        <button id="more-offers"><img src="assets/img/arrow.png">View More</button>
+      </div>-->
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div id="unclock-feature" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Create an account to unlock this feature.</p>
+        <button id="create-account" data-location="" data-href="">Create an account</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal -->
+<style>
+  #create-account{
+    padding: 6px 18px;
+    text-transform:uppercase;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 12px;
+    display: inline-block;
+    appearance:none;
+    -webkit-appearance:none;
+    outline:0;
+    margin-top:15px;
+  }
+
+  .modal-header{
+    padding: 10px 15px 0;
+    border-bottom: none !important;
+  }
+
+</style>

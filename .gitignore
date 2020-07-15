@@ -1,0 +1,23 @@
+
+# Created by https://www.gitignore.io/api/cordova
+# Edit at https://www.gitignore.io/?templates=cordova
+
+### Cordova ###
+# gitignore template for the Cordova framework
+# website: https://cordova.apache.org/
+#
+# Recommended template: Node.gitignore
+
+# App platform binaries and built files
+/platforms
+node_modules/
+plugins/
+
+
+# End of https://www.gitignore.io/api/cordova
+
+Session.vim
+.tags
+
+.DS_Store
+Thumbs.db

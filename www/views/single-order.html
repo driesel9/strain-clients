@@ -1,0 +1,29 @@
+<div class="single-order-content">
+  <div class="order-number"></div>
+  <div class="order-status"><span class="main-status"></span><span class="order-submitted"></span></div>
+  <div class="order-location"></div>
+  <div class="order-date"></div>
+  <div class="order-products"><div class="notice"></div><ul></ul></div>
+  <div class="order-subtotal"></div>
+  <div class="order-tax"></div>
+  <div class="order-total"></div>
+  <div class="order-action"><button id="complete-order" data-order="">Complete Order</button></div>
+</div>
+
+<!-- Modal -->
+<div id="modal-order-remove" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Are you sure you want to remove this item from your order?</p>
+        <button id="remove" data-dismiss="modal" data-location="" data-product="" data-order="">YES</button>
+        <button id="cancel" data-dismiss="modal">NO</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal -->

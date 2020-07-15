@@ -1,0 +1,81 @@
+<div class="strain-content">
+
+  <div class="heading">
+      <h5>Select store or category to browse products</h5>
+  </div>
+
+  <div class="offers-filter">
+    <select id="location-selector" class="filter-menu">
+    </select>
+  </div>
+
+  <div class="offers-filter">
+    <select id="cat-selector" class="filter-menu">
+    </select>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="strain-list">
+  </div>
+
+  <!-- shimmer-view -->
+  <div class="shimmer-strains shimmer-view">
+
+    <div class="shimmer-strain">
+      <!-- strain:thumb -->
+      <box class="shine"></box>
+
+      <div>
+        <!-- strain:location -->
+        <lines class="shine col-10 ht-15"></lines>
+
+        <!-- strain:category -->
+        <lines class="shine col-6"></lines>
+        <!-- strain:price -->
+        <lines class="shine col-2"></lines>
+        <!-- strain:qty -->
+        <lines class="shine col-4"></lines>
+      </div>
+    </div>
+
+    <div class="shimmer-strain">
+      <box class="shine"></box>
+      <div>
+        <lines class="shine col-10 ht-15"></lines>
+        <lines class="shine col-6"></lines>
+        <lines class="shine col-2"></lines>
+        <lines class="shine col-4"></lines>
+      </div>
+    </div>
+
+    <div class="shimmer-strain">
+      <box class="shine"></box>
+      <div>
+        <lines class="shine col-10 ht-15"></lines>
+        <lines class="shine col-6"></lines>
+        <lines class="shine col-2"></lines>
+        <lines class="shine col-4"></lines>
+      </div>
+    </div>
+  </div>
+
+  <div class="load-more">
+    <button data-page="" data-category="" data-location="">Load more</button>
+  </div>
+
+</div>
+
+<style>
+
+  .shimmer-strain {
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+  .shimmer-strain box {
+    width: 120px;
+    height: 95px;
+  }
+
+</style>

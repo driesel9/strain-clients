@@ -1,0 +1,88 @@
+<div class="single-menu-content">
+  <div class="heading">
+    <img src="">
+  </div>
+
+  <div class="post-meta">
+    <div class="post-cat"></div>
+  </div>
+
+  <div class="post-title">
+    <h1></h1>
+  </div>
+
+  <div class="item-quantity hide">
+    <span id="type-uom"></span> Available: <strong style="font-weight: 600"></strong>
+  </div>
+
+  <div class="post-content"></div>
+
+  <!-- shimmer-view -->
+  <div class="shimmer-single-menu shimmer-view">
+
+    <!-- single-menu:thumb -->
+    <box class="shine"></box>
+
+    <div>
+      <!-- single-menu:title -->
+      <lines class="shine col-2 ht-15"></lines>
+
+      <!-- single-menu:cat -->
+      <lines class="shine col-10 ht-20"></lines>
+
+      <!-- single-menu:category -->
+      <lines class="shine col-6"></lines>
+
+      <!-- single-menu:qty -->
+      <lines class="shine col-4"></lines>
+    </div>
+  </div>
+
+  <div class="order-section">
+    <div class="prices">
+      <span></span>
+      <ul></ul>
+    </div>
+
+    <div class="quantity hide">
+      <input type="button" class="qbt" value="-" id="minus">
+      <input type="number" value="1" min="" max="" id="quantity">
+      <input type="button" class="qbt" value="+" id="plus">
+    </div>
+
+    <div class="price">
+      <input type="hidden" id="price" name="price_value" value="" readonly>
+      <span id="price-text"></span>
+    </div>
+
+    <div class="submit-order">
+      <div class="bt-wrap">
+        <button class="disabled hide" id="submit_order">Add to Cart</button>
+      </div>
+    </div>
+
+    <input type="hidden" id="product_available" value="">
+    <input type="hidden" id="masterID" />
+    <input type="hidden" id="productType" />
+    <input type="hidden" id="orderDestination" />
+    <input type="hidden" id="weightUOM" />
+    <input type="hidden" value="1" id="soldWeightConcentrate" />
+
+  </div>
+
+</div>
+
+<style>
+
+  .shimmer-single-menu {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .shimmer-single-menu box {
+    width: 150px;
+    height: 160px;
+    margin-bottom: 30px;
+    background-size: 800px 160px !important;
+  }
+
+</style>
