@@ -2,60 +2,29 @@
 
 <img src="./resources/icon.png" width="64" height="64"/>
 
+An hybrid mobile app for Cannabis dispensaries
+
+## Preview
+
+<img src="./preview.gif"/>
 
 
+## License & Ownership
 
-## iOS build and deploy
+- Partially [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
-### Create iOS platform
+    > For the commercial purpose, you should contact to [Driesel](mailto:coding.driesel@gmail.com) to get the Premium License.
 
-```
-cordova platform add ios
-```
+- the repository was owned by André Driesel due to some disputes with [STRAIN](https://thestrainapp.com/).
 
-### Cocoapods setup
 
-`onesignal-cordova-plugin` uses CocoaPods to manage dependencies. This can cause errors while generating the iOS platform, or errors during compilation. To solve the problem:
+    > I believe they gave up the ownership in `1,500 USD`, and the repository will be removed when the funds reach to expected amount.
 
-- Step 1: Prerequisites
 
-    If CocoaPods is not installed in your mac, install it. 
-   
-    ```
-    sudo gem install cocoapods
-    ```
+Special thanks to **Claus Jepsen** for the clarification about the ownership. 
 
-    If CocoaPods is outdated, update it.
+## FAQ
 
-    ```
-    pod repo update
-    ```
-- Step 2: Install dependencies
-    ```
-    pod install --project-directory="./platforms/ios"
-    ```
+### Does the repository include `Dashboard` or `Andmin panel` to handle mobile API/Contents?
 
-### Generate icon and splash
-
-We can use `cordova-res` to generate icon and splash.
-https://www.npmjs.com/package/cordova-res
-
-### iOS build and deploy
-
-After fixed `onesignal` plugin and prepared icon/splash, you need to update ios platform.
-
-```
-cordova prepare ios
-```
-
-Or fresh update
-
-```
-cordova plugin save
-cordova platform remove ios
-cordova platform add ios
-```
-
-And then, goto `platforms/ios` and open <PROJECT_NAME>.`xcworkspapce` file using XCode.
-
-That's it. You can build and deploy with XCode. A good example for iOS deployment is [here](https://guide.freecodecamp.org/mobile-app-development/cordova-ios-application-development-setup-to-deployment/).
+No, it includes mobile app source code only, but there some resources are ready to assist you.
